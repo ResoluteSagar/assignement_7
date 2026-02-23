@@ -1,16 +1,12 @@
 #include <stdio.h>
 
 float circleArea(float radius) {
-    return 3.1416 * radius * radius;
+    float area = (22.0/7.0) * radius * radius;
+    return area;
 }
 
 int main() {
-    float radius;
-
-    printf("Enter radius: ");
-    scanf("%f", &radius);
-
-    printf("Area of circle: %.2f\n", circleArea(radius));
-
+    float result = circleArea(10.5);
+    printf("The area of the circle is %f\n", result);
     return 0;
 }
